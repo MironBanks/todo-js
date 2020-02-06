@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	font-size: 10px;
+	font-family: 'Teko', sans-serif;
+	overflow: scroll;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+	width: 0px; /* Remove scrollbar space */
+	background: transparent; /* Optional: just make scrollbar invisible */
+}
+body {
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	border: 1px solid black;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	justify-items: center;
+	text-align: center;
+
+	width: 900px;
+	margin: 3rem;
+}
+
+input {
+	text-align: center;
+}
+
+.inputList {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.inputArea {
+	display: flex;
+	flex-direction: column;
+
+	margin: 20px auto;
+}
+
+.inputArea #add {
+	margin-top: 10px;
+}
+
+.listItem {
+	width: 40%;
+	margin-right: 50px;
+}
+
+.inputArea #userInput,
+#add {
+	font-family: 'Teko', sans-serif;
+	font-size: 3rem;
+}
+
+.listItem ul li {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	font-size: 3rem;
+	font-weight: 200;
+	list-style: none;
+}
+
+h2 {
+	font-size: 3rem;
+	font-weight: 200;
+	list-style: none;
+}
+
+h1 {
+	font-size: 8rem;
+	font-weight: 200;
+	margin: 6rem;
+}
+
+.done {
+	text-decoration: line-through;
+}
+
+.btn {
+	box-shadow: inset 0px 1px 0px 0px #ffffff;
+	background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color: #f9f9f9;
+	border-radius: 6px;
+	border: 1px solid #dcdcdc;
+	display: inline-block;
+	cursor: pointer;
+	color: #666666;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: 100;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+.btn:hover {
+	background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	background-color: #e9e9e9;
+}
+.btn:active {
+	position: relative;
+	top: 1px;
+}
+
+.deleteBtn {
+	box-shadow: inset 0px 1px 0px 0px #ffffff;
+	background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color: #f9f9f9;
+	border-radius: 16px;
+	border: 1px solid #dcdcdc;
+	display: inline-block;
+	cursor: pointer;
+	color: #666666;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 6px 9px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+.deleteBtn:hover {
+	background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	background-color: #e9e9e9;
+}
+.deleteBtn:active {
+	position: relative;
+	top: 1px;
+}
